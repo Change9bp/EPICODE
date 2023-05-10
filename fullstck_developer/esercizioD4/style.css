@@ -1,0 +1,300 @@
+body {
+  margin: 0px;
+  background-color: #eaeded;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header div {
+  padding-top: 0.7%;
+  background-color: #222f3e;
+}
+header div img {
+  width: 10%;
+  padding-left: 2%;
+}
+nav {
+  margin: 0%;
+  padding: 0.5% 0%;
+  background-color: #354758;
+}
+ul {
+  margin: 0px;
+  color: white;
+  list-style-type: none;
+  padding-left: 1%;
+}
+li {
+  display: inline;
+  margin-left: 1%;
+}
+main {
+  padding: 2%;
+}
+
+p.main {
+  background-color: #f56600;
+  color: white;
+  text-align: center;
+  padding: 0.7% 0;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+div#box1 {
+  background-image: url(./assets/bg-image.png);
+  height: 16rem;
+  background-size: 92%;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+#box1_paragrafo {
+  font-size: 2.5em;
+  color: white;
+  padding-top: 5%;
+  margin-top: 0%;
+}
+
+#box1_paragrafo2 {
+  font-size: 1em;
+  color: white;
+}
+
+.box {
+  margin-top: 2%;
+  height: 35rem;
+}
+
+.box_ridotto {
+  margin-top: 2%;
+  /* height: 30em;*/
+}
+
+#find {
+  background-color: white;
+  padding: 1% 0%;
+}
+#find h2 {
+  margin-left: 2%;
+}
+
+span {
+  color: #1f8193;
+  font-size: 0.8em;
+  margin-left: 1%;
+}
+
+.img_find {
+  display: inline-block;
+  border-radius: 1em;
+  width: 22%;
+  height: 30em;
+  margin-left: 2%;
+  background-position: center;
+  box-shadow: 0.5em 0.5em 1em #cbcbcd;
+}
+
+#img1 {
+  background-image: url(./assets/img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img2 {
+  background-image: url(./assets/img_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img3 {
+  background-image: url(./assets/img_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img4 {
+  background-image: url(./assets/img_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ESERCIZIO D4 */
+
+.container {
+  display: inline-block;
+  width: 21.5%;
+  height: inherit;
+  background-color: white;
+  margin-left: 1%;
+  padding: 1%;
+}
+.title_product h3 {
+  padding-left: 4%;
+}
+.product_list {
+  position: relative;
+  width: 100%;
+}
+.container_interno {
+  display: inline-block;
+  padding: 4%;
+  width: 41%;
+}
+
+.container_img {
+  display: inline-block;
+  width: 100%;
+}
+
+.container_img img {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+}
+
+.container_description p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0%;
+}
+
+.footer_list p {
+  color: #1f8193;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-left: 4%;
+}
+
+/*STIKER*/
+
+.stiker {
+  position: absolute;
+  width: 15%;
+  height: auto;
+}
+
+#new1 {
+  display: none;
+  top: 34%;
+  right: 49%;
+}
+#new2 {
+  display: none;
+  top: 34%;
+  right: -1%;
+}
+#new3 {
+  display: none;
+  top: 83%;
+  right: 49%;
+}
+#new4 {
+  display: none;
+  top: 83%;
+  right: -1%;
+}
+
+#new5 {
+  display: inline;
+  top: 34%;
+  right: 49%;
+}
+#new6 {
+  display: none;
+  top: 34%;
+  right: -1%;
+}
+#new7 {
+  display: none;
+  top: 83%;
+  right: 49%;
+}
+#new8 {
+  display: inline;
+  top: 83%;
+  right: -1%;
+}
+
+#new9 {
+  display: inline;
+  top: 34%;
+  right: 49%;
+}
+#new10 {
+  display: none;
+  top: 34%;
+  right: -1%;
+}
+#new11 {
+  display: none;
+  top: 83%;
+  right: 49%;
+}
+#new12 {
+  display: none;
+  top: 83%;
+  right: -1%;
+}
+#new13 {
+  display: none;
+  top: 34%;
+  right: 49%;
+}
+#new14 {
+  display: none;
+  top: 34%;
+  right: -1%;
+}
+#new15 {
+  display: none;
+  top: 83%;
+  right: 49%;
+}
+#new16 {
+  display: none;
+  top: 83%;
+  right: -1%;
+}
+
+#play {
+  text-align: center;
+}
+#box2 {
+  background-image: url(./assets/img_9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30em;
+}
+
+#box3 {
+  background-image: url(./assets/img_10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30em;
+}
+
+#sound {
+  text-align: center;
+}
+
+#sound h2 {
+  margin-bottom: 0%;
+}
+
+#footer_link {
+  text-align: center;
+  background-color: #354758;
+  padding: 1% 0%;
+}
+footer a {
+  color: white;
+}
+footer div {
+  padding: 3% 0%;
+  text-align: center;
+  background-color: #222f3e;
+}
+footer div img {
+  width: 15%;
+}

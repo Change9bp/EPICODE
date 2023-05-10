@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrazione musica</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+      body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        color: white;
+      }
+      #titolo {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(29, 157, 29);
+        border-radius: 1em 1em 0 0;
+      }
+      #form_musica {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #222;
+        border-radius: 0 0 1em 1em;
+        padding-top: 2%;
+      }
+
+      .anagrafica {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+      .preferenze {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        margin-bottom: 5%;
+        padding: 4%;
+        border-radius: 0.4em;
+        color: white;
+        background-color: rgb(29, 157, 29);
+        width: 68%;
+        border: none;
+      }
+      input {
+        /*   background-color: #1c1c1c;
+        color: white;*/
+        border: 1px solid black;
+        width: 85%;
+        height: 2.5em;
+        color-scheme: dark;
+        border-radius: 0.7em;
+      }
+      #date {
+        width: 99.3%;
+      }
+
+      label {
+        color: #787878;
+      }
+      #radioTermini {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #termini {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="titolo"><p>MODULO DI REGISTRAZIONE</p></div>
+    <div id="form_musica">
+      <form onsubmit="alert('Registrazione inviata!');">
+        <div class="anagrafica">
+          <input type="text" placeholder="Nome" /><br />
+          <input type="text" placeholder="Cognome" /><br />
+          <input type="email" placeholder="Il tuo indirizzo mail" /><br />
+          <input type="password" placeholder="Digita la tua password" /><br />
+          <label
+            >Data di nascita<br /><input
+              id="date"
+              type="date"
+              placeholder="Data di nascita" /></label
+          ><br />
+          <input type="number" placeholder="Telefono" /><br />
+        </div>
+        <div class="preferenze">
+          <input id="metal" type="checkbox" /> <label for="metal">METAL</label>
+          <input id="indie" type="checkbox" /> <label for="indie">INDIE</label>
+          <input id="italiana" type="checkbox" />
+          <label for="italiana">ITALIANA</label>
+          <input id="classica" type="checkbox" />
+          <label for="classica">CLASSICA</label>
+          <input id="rock" type="checkbox" />
+          <label for="rock">ROCK</label>
+          <input id="rap" type="checkbox" />
+          <label for="rap">RAP</label>
+        </div>
+        <br />
+        <div class="submit">
+          <div id="radioTermini">
+            <input id="termini" type="radio" />
+            <label for="termini">Accettazione dei termini e condizioni</label>
+          </div>
+          <br />
+          <button type="submit">INVIA REGISTRAZIONE</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // che cos'è un array? è un oggetto lista contenete al suo interno più dati
+      //si dichiara come una variabile ma i dati dell'array cono contenuti tra parentesi []
+
+      let citta = "Milano,Roma,Torino,Venezia,Napoli";
+      let data = ["Milano", "Roma", "Torino", "Venezia", "Napoli"];
+
+      // come accediamo ai dati contenuti in un array?
+
+      console.log(data); // ci darà tutti i valori dell'array, per ogni valore dell'array è mostrato un indice che parte da 0 a salire
+      //se voglio stampare a ideo il 4° valore dell'array dovrò quindi chiedere di stampare l'indice n°3
+
+      console.log(data[3]); //sampo indice 3 "Venezia"
+
+      // se voglio stampare l'ultimo elemento di un'array
+      console.log(data[data.length - 1]);
+
+      // come passare in rassegna un array? tramite un ciclo for, ciclare unarray:
+
+      for (i = 0; i < data.length; i++) {
+        console.log(data[i]);
+      } // verranno stampati tutti i valori degll'array sino a quando i non avrà raggiunto il valore 5
+
+      // come posso convertire una stringa in un array?
+      //poniamo ad esempio la variabile "città" posta all'inizio come posso trasformarla in un array di nome "CITTA"
+
+      let CITTA = citta.split(",");
+      // il metodo split()ha utilizzato la virgola ',' come separatore ignorando gli apici e trasformado la stringa in array
+
+      console.log(CITTA);
+
+      // al contrario da array a stringa utilizzo il metodo join()
+      // trasformo l'array "data" in variabile stringa "CITTA"
+
+      CITTA = data.join(","); // lo abbiamo trasformato in stringa
+      console.log(CITTA);
+
+      // come posso aggiungere valori al fondo di un array? aggiungo un valore alla'array "data" con l'attributo push()
+
+      data.push("Firenze");
+      console.log(data);
+      // e se voglio aggiungere un elemento all'inizio di un array? unshift()
+
+      data.unshift("Domodossala");
+      console.log(data);
+
+      // eliminare un elemento dal fondo di un array? pop()
+
+      data.pop();
+      console.log(data);
+
+      // eliminare un elemento dall'inizio di un array? shift()
+
+      data.shift();
+      console.log(data);
+
+      // se voglio eliminare un elemento? l'ultimo elemento
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // stringhe, usare sempre gli apici ('') oppure ("")
+      let nome = "Alessandro";
+      let cognome = "Contestabile";
+      // sono stringhe, le stringhe si possono concatenare
+
+      let nomeCognome = nome + " " + cognome;
+      console.log(nomeCognome);
+
+      // convertire stringhe in numeri, i numeri se dichirati sotto apici '' sono stringhe
+
+      let numero1 = "20";
+      let numero2 = 56;
+      // posso usare l'attributo "Number()" per convertire la stringa in numero
+      console.log(Number(numero1) + numero2);
+
+      // posso convertire da numero a stringa usando un'altra funzione
+
+      numero1 = "30";
+      numero2 = 28;
+      // converto il numero in stringa attraverso l'attributo ".toString()"
+      console.log(numero1 + numero2.toString());
+
+      //template literls, permettono di inseire in ua stringa delle funzioni o delle variabili
+      // in questo modo posso evotare di dover ad esempio caratteri di escape quando all'interno della stringa devo usare più volte gli apici(\ è un carattere di escape)
+
+      let testo = "ciao mi chiamo Alessandro";
+      let elemento = `<h1>${testo} Contestabile</h1>`;
+      // lo inserisco nell'html
+      document.body.innerHTML = elemento;
+
+      // come troviamo la lunghezza di una stringa?
+
+      let stringa = "ciao";
+      console.log(stringa.length); // restituisce la lunghez dei caratteri di una stringa
+
+      // come ottengo un carattere specifico di una stringa? lo tratto come un'array sfruttando gli indici
+      console.log(stringa[0]); // ho ottenuto il primo carattere della sringa con indice 0
+
+      // se voglio ottenere ad esempio l'ultimo carattere di una stringa di cui non conosco la lunghezza posso usare
+
+      console.log(stringa[stringa.length - 1]); //siccome l'indice comincia sempre da 0, l'ultimo carattere della stringa sarà sempre la sua lunghezza (length) - 1
+
+      // immaginiamo di avere una stringa più lunga e di quest vogliamo sapere a che indice comincis una determinata parola
+      stringa =
+        "ciao io sono Alessandro Contestabile e sto provando a scrivere una stringa";
+      // voglio sapere da che indice parte la parola 'provando'
+      console.log(stringa.indexOf("provando"));
+
+      //voglio tagliare una stringa da un determinato indice e stampare solo ciò che viene dopo
+
+      let indexStringa = stringa.indexOf("provando");
+      console.log(stringa.slice(indexStringa));
+      //oppure senza mettere una variabile ma direttamente in console.log
+      console.log(stringa.slice(stringa.indexOf("provando")));
+
+      // converto miuscolo e minuscolo
+
+      console.log(stringa.toLocaleUpperCase());
+      console.log(stringa.toLocaleLowerCase());
+
+      //sostituire un pezzo di un stringa con altro
+
+      console.log(
+        stringa.replace("Alessandro Contestabile", "Giulia Santalucia")
+      );
+    </script>
+  </body>
+</html>

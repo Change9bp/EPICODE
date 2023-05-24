@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        text-align: center;
+      }
+      header p {
+        color: #828282;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li:first-child {
+        font-weight: bold;
+      }
+
+      #box1 ul li:last-child {
+        font-weight: bold;
+        background-color: #adacac;
+        border-radius: 2px;
+      }
+      #box1 ul li:last-child a {
+        color: black;
+      }
+      #box1 button {
+        width: 150px;
+        padding: 15px;
+      }
+      ul {
+        color: #828282;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+      }
+      li {
+        display: inline-block;
+      }
+      a {
+        color: #828282;
+      }
+      span {
+        font-weight: bold;
+      }
+      #box1 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #box1 ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #container_card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 3%;
+      }
+      .card {
+        width: 23%;
+        min-width: 300px;
+        padding-bottom: 3%;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 3%;
+      }
+      .cardTitle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+      }
+
+      .titleleft {
+        display: flex;
+        align-items: center;
+      }
+      .titleleft > * {
+        margin-right: 8px;
+      }
+
+      .titleleft img {
+        width: 25px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+
+      .titleleft span:nth-child(3) {
+        background-color: #cecece;
+        color: white;
+        font-size: 0.5em;
+        border-radius: 2px;
+        padding: 3px;
+      }
+
+      .titleright {
+        display: flex;
+        align-items: center;
+      }
+      .titleright > * {
+        color: #828282;
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flex box</h1>
+      <p>10,000+ amazing flex box design inspiration</p>
+      <nav>
+        <ul>
+          <li>Related:</li>
+          <li><a href="#">package</a></li>
+          <li><a href="#">muscle</a></li>
+          <li><a href="#">cardboard</a></li>
+          <li><a href="#">gift</a></li>
+          <li><a href="#">cube</a></li>
+          <li><a href="#">boxes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="box1">
+        <button><a href="#">Popular</a></button>
+
+        <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#">Animation</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Illustration</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Product design</a></li>
+          <li><a href="#">Typograpy</a></li>
+          <li>
+            <a href="#">Web Design</a>
+          </li>
+        </ul>
+        <button><a href="#">Filters</a></button>
+      </div>
+
+      <div id="container_card">
+        <div class="card">
+          <img src="./assets/img_1.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Caglar Cebeci</span
+              ><span>PRO</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_2.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Ramotion</span
+              ><span>TEAM</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_3.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Zajno Crew</span
+              ><span>TEAM</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_4.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Afterglow</span
+              ><span>TEAM</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_5.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Kobbie Da</span
+              >
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_6.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span>Icons8</span
+              ><span>TEAM</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_7.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span>Pitch</span
+              ><span>TEAM</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img_8.jpeg" alt="img" />
+          <div class="cardTitle">
+            <div class="titleleft">
+              <img src="./assets/img_3.jpeg" alt="imgtitle" /><span
+                >Nicolas Solerleu</span
+              ><span>PRO</span>
+            </div>
+            <div class="titleright">
+              <i class="fa-solid fa-heart"></i><span>777</span
+              ><i class="fa-solid fa-eye"></i><span>777</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
